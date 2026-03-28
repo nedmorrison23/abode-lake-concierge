@@ -274,6 +274,7 @@ a { color: inherit; text-decoration: none; }
 .how-it-works { background: var(--cream); }
 .steps-header { text-align: center; margin-bottom: 64px; }
 .steps-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; }
+.steps-grid-4 { grid-template-columns: repeat(4, 1fr); }
 .step-card {
   background: #fff;
   border-radius: 12px;
@@ -506,6 +507,9 @@ a { color: inherit; text-decoration: none; }
 /* ========================================
    RESPONSIVE
    ======================================== */
+@media (max-width: 1200px) {
+  .steps-grid-4 { grid-template-columns: repeat(2, 1fr); }
+}
 @media (max-width: 992px) {
   .hero h1 { font-size: 2.6rem; }
   .hero-grid, .about-grid, .cta-grid { grid-template-columns: 1fr; gap: 48px; }
@@ -664,6 +668,46 @@ a { color: inherit; text-decoration: none; }
         <div class="about-text">
           <p>Away from home? ABODE keeps a watchful eye on your property with routine visits to inspect, monitor, and care for your home while you're gone.</p>
         </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LAKE HOUSE MANAGEMENT -->
+<section class="how-it-works section-pad" id="lake-house">
+  <div class="container">
+    <div class="steps-header fade-up">
+      <div class="section-eyebrow">Lake House Management</div>
+      <h2 class="section-heading">We Handle the Lake House.<br><em>You Enjoy It.</em></h2>
+    </div>
+    <div class="steps-grid steps-grid-4">
+      <div class="step-card fade-up">
+        <div class="step-number">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+        </div>
+        <h3>Seamless Seasonal Management</h3>
+        <p>From spring open-up to fall close-down, we handle every detail. Pier and boat lift coordination, HVAC service, sprinkler systems, and everything in between. You show up. We have already taken care of it.</p>
+      </div>
+      <div class="step-card fade-up" style="transition-delay:0.1s;">
+        <div class="step-number">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        </div>
+        <h3>One Call. Everything Handled.</h3>
+        <p>One point of contact for every vendor, every repair, and every maintenance need. We manage the relationships, the scheduling, and the follow-through so nothing falls through the cracks and nothing lands back on you.</p>
+      </div>
+      <div class="step-card fade-up" style="transition-delay:0.2s;">
+        <div class="step-number">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+        </div>
+        <h3>Your Property Is Always Looked After</h3>
+        <p>We offer regular home check-ins at your desired frequency, on and off season. Whether your lake house sits empty for weeks or months at a time, you will always know it is in pristine condition and nothing has been overlooked.</p>
+      </div>
+      <div class="step-card fade-up" style="transition-delay:0.3s;">
+        <div class="step-number">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <h3>The Right People, Every Time</h3>
+        <p>We work exclusively with trusted, vetted vendors who know lake properties. No guessing, no searching, no surprises. Just reliable work done right.</p>
       </div>
     </div>
   </div>
